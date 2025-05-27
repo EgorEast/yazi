@@ -6,3 +6,16 @@ desc = "Compress with ouch"
 on = ["m"]
 run = "plugin relative-motions"
 desc = "Trigger a new relative motion"
+
+[[manager.prepend_keymap]]
+on = ["f", "g"]
+run = "plugin fg"
+desc = "find file by content (fuzzy match)"
+[[manager.prepend_keymap]]
+on = ["f", "G"]
+run = "plugin fg -- rg"
+desc = "find file by content (ripgrep match)"
+[[manager.prepend_keymap]]
+on = ["f", "f"]
+run = "plugin fg -- fzf"
+desc = "find file by filename"
