@@ -1,68 +1,67 @@
 # default -- https://github.com/sxyazi/yazi/blob/shipped/yazi-config/preset/keymap-default.toml
 
-# ouch
-[[manager.prepend_keymap]]
-on = ["C"]
-run = "plugin ouch"
-desc = "Compress with ouch"
+[manager]
+prepend_keymap = [
+  # ouch
+  { on = [
+    "C",
+  ], run = "plugin ouch", desc = "Compress with ouch" },
+  # relative motions
+  { on = [
+    "m",
+  ], run = "plugin relative-motions", desc = "Trigger a new relative motion" },
+  # find
+  { on = [
+    "f",
+    "g",
+  ], run = "plugin fg", desc = "find file by content (fuzzy match)" },
+  { on = [
+    "f",
+    "G",
+  ], run = "plugin fg -- rg", desc = "find file by content (ripgrep match)" },
+  { on = [
+    "f",
+    "f",
+  ], run = "plugin fg -- fzf", desc = "find file by filename" },
 
-# relative motions
-[[manager.prepend_keymap]]
-on = ["m"]
-run = "plugin relative-motions"
-desc = "Trigger a new relative motion"
-
-# find
-[[manager.prepend_keymap]]
-on = ["f", "g"]
-run = "plugin fg"
-desc = "find file by content (fuzzy match)"
-[[manager.prepend_keymap]]
-on = ["f", "G"]
-run = "plugin fg -- rg"
-desc = "find file by content (ripgrep match)"
-[[manager.prepend_keymap]]
-on = ["f", "f"]
-run = "plugin fg -- fzf"
-desc = "find file by filename"
-
-# rename
-# --hovered: Always rename the hovered file regardless of the selection state.
-# --force: Overwrite the destination file directly if it exists, without showing the confirmation dialog.
-# --empty: Empty a part of the filename.
-#   "stem": Empty the stem. e.g. "foo.jpg" -> ".jpg".
-#   "ext": Empty the extension. e.g. "foo.jpg" -> "foo.".
-#   "dot_ext": Empty the dot and extension. e.g. "foo.jpg" -> "foo".
-#   "all": Empty the whole filename. e.g. "foo.jpg" -> "".
-# --cursor: Specify the cursor position of the renaming input box.
-#   "end": The end of the filename.
-#   "start": The start of the filename.
-#   "before_ext": Before the extension of the filename.
-[[manager.prepend_keymap]]
-on = ["r", "r"]
-run = "rename --cursor=before_ext"
-desc = "Rename selected file(s)"
-[[manager.prepend_keymap]]
-on = ["r", "e"]
-run = "rename --cursor=end"
-desc = "Rename end"
-[[manager.prepend_keymap]]
-on = ["r", "s"]
-run = "rename --cursor=start"
-desc = "Rename start"
-[[manager.prepend_keymap]]
-on = ["r", "n"]
-run = "rename --cursor=start --empty=stem"
-desc = "Remove name 'foo.jpg' -> '.jpg'"
-[[manager.prepend_keymap]]
-on = ["r", "x"]
-run = "rename --cursor=end --empty=ext"
-desc = "Remove ext 'foo.jpg' -> 'foo.'"
-[[manager.prepend_keymap]]
-on = ["r", "d"]
-run = "rename --cursor=end --empty=dot_ext"
-desc = "Remove ext and dot 'foo.jpg' -> 'foo'"
-[[manager.prepend_keymap]]
-on = ["r", "a"]
-run = "rename --empty=all"
-desc = "Empty all 'foo.jpg' -> ''"
+  # rename
+  # --hovered: Always rename the hovered file regardless of the selection state.
+  # --force: Overwrite the destination file directly if it exists, without showing the confirmation dialog.
+  # --empty: Empty a part of the filename.
+  #   "stem": Empty the stem. e.g. "foo.jpg" -> ".jpg".
+  #   "ext": Empty the extension. e.g. "foo.jpg" -> "foo.".
+  #   "dot_ext": Empty the dot and extension. e.g. "foo.jpg" -> "foo".
+  #   "all": Empty the whole filename. e.g. "foo.jpg" -> "".
+  # --cursor: Specify the cursor position of the renaming input box.
+  #   "end": The end of the filename.
+  #   "start": The start of the filename.
+  #   "before_ext": Before the extension of the filename.
+  { on = [
+    "r",
+    "r",
+  ], run = "rename --cursor=before_ext", desc = "Rename selected file(s)" },
+  { on = [
+    "r",
+    "e",
+  ], run = "rename --cursor=end", desc = "Rename end" },
+  { on = [
+    "r",
+    "s",
+  ], run = "rename --cursor=start", desc = "Rename start" },
+  { on = [
+    "r",
+    "n",
+  ], run = "rename --cursor=start --empty=stem", desc = "Remove name 'foo.jpg' -> '.jpg'" },
+  { on = [
+    "r",
+    "x",
+  ], run = "rename --cursor=end --empty=ext", desc = "Remove ext 'foo.jpg' -> 'foo.'" },
+  { on = [
+    "r",
+    "d",
+  ], run = "rename --cursor=end --empty=dot_ext", desc = "Remove ext and dot 'foo.jpg' -> 'foo'" },
+  { on = [
+    "r",
+    "a",
+  ], run = "rename --cursor=end --empty=all", desc = "Remove all 'foo.jpg' -> ''" },
+]

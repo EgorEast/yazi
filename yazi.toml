@@ -15,6 +15,7 @@ max_height = 900
 
 [plugin]
 prepend_previewers = [
+  { name = "*.md", run = "glow" },
   # Archive previewer
   { mime = "application/*zip", run = "ouch" },
   { mime = "application/x-tar", run = "ouch" },
@@ -23,7 +24,6 @@ prepend_previewers = [
   { mime = "application/x-rar", run = "ouch" },
   { mime = "application/x-xz", run = "ouch" },
   { mime = "application/xz", run = "ouch" },
-  { name = "*.md", run = "glow" },
 ]
 
 [opener]
