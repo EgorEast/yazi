@@ -24,13 +24,14 @@ prepend_previewers = [
   { mime = "application/xz", run = "ouch" },
   { name = "*.md", run = "glow" },
 ]
-# [[manager.prepend_keymap]]
-# on = ["C"]
-# run = "plugin ouch"
-# desc = "Compress with ouch"
-#
-# [opener]
-# extract = [
-# 	{ run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
-# 	{ run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
-# ]
+
+[[manager.prepend_keymap]]
+on = ["C"]
+run = "plugin ouch"
+desc = "Compress with ouch"
+
+[opener]
+extract = [
+  { run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
+  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
+]
