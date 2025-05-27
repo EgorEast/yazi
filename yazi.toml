@@ -25,11 +25,6 @@ prepend_previewers = [
   { name = "*.md", run = "glow" },
 ]
 
-[[manager.prepend_keymap]]
-on = ["C"]
-run = "plugin ouch"
-desc = "Compress with ouch"
-
 [opener]
 extract = [
   { run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
