@@ -43,3 +43,5 @@ require("yamb"):setup({
 
 -- TODO: uncommit when yazi update to v25.5.28
 require("git"):setup()
+
+require("full-border"):setup()
