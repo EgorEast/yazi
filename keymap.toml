@@ -117,4 +117,6 @@ prepend_keymap = [
     "i",
   ], run = "plugin lazygit", desc = "run lazygit" },
 
+
+  { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
 ]
