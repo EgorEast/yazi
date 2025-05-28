@@ -106,4 +106,9 @@ prepend_keymap = [
     "u",
     "R",
   ], run = "plugin yamb rename_by_fzf", desc = "Rename bookmark by fzf" },
+
+  { on = [
+    "c",
+    "m",
+  ], run = "plugin chmod", desc = "Chmod on selected files" },
 ]

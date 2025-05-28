@@ -23,5 +23,10 @@ use = "h-hg/yamb"
 rev = "22af003"
 hash = "7cc42012a7c2099f80064d228feb8d44"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "4df8f70"
+hash = "2f1053f89d1a301a648ab181d0948e38"
+
 [flavor]
 deps = []
