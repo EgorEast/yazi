@@ -24,6 +24,15 @@ prepend_keymap = [
     "f",
   ], run = "plugin fg -- fzf", desc = "find file by filename" },
 
+  { on = [
+    "f",
+    "F",
+  ], run = "filter --smart", desc = "Filter files" },
+  { on = [
+    "f",
+    "j",
+  ], run = "plugin first-non-directory", desc = "Jumps to the first file" },
+
   # rename
   # --hovered: Always rename the hovered file regardless of the selection state.
   # --force: Overwrite the destination file directly if it exists, without showing the confirmation dialog.

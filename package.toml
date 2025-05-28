@@ -13,5 +13,10 @@ use = "dedukun/relative-motions"
 rev = "ce2e890"
 hash = "23915860e59348bf4166778bb0e606f7"
 
+[[plugin.deps]]
+use = "lpanebr/yazi-plugins:first-non-directory"
+rev = "ca18a2c"
+hash = "5c20ffa5171dab34042e03d273dddc5b"
+
 [flavor]
 deps = []
