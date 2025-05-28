@@ -48,5 +48,7 @@ use = "yazi-rs/plugins:full-border"
 rev = "43ff052"
 hash = "3996fc74044bc44144b323686f887e1"
 
-[flavor]
-deps = []
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "b3950bf"
+hash = "319ce574cdb2865baf4323db90456504"
