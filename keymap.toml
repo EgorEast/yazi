@@ -74,21 +74,36 @@ prepend_keymap = [
     "a",
   ], run = "rename --cursor=end --empty=all", desc = "Remove all 'foo.jpg' -> ''" },
 
-  # bookmarks
   { on = [
-    "b",
-    "b",
-  ], run = "plugin bookmarks save", desc = "Save current position as a bookmark" },
+    "u",
+    "a",
+  ], run = "plugin yamb save", desc = "Add bookmark" },
   { on = [
-    "b",
-    "'",
-  ], run = "plugin bookmarks jump", desc = "Jump to a bookmark" },
+    "u",
+    "g",
+  ], run = "plugin yamb jump_by_key", desc = "Jump bookmark by key" },
   { on = [
-    "b",
+    "u",
+    "G",
+  ], run = "plugin yamb jump_by_fzf", desc = "Jump bookmark by fzf" },
+  { on = [
+    "u",
     "d",
-  ], run = "plugin bookmarks delete", desc = "Delete a bookmark" },
+  ], run = "plugin yamb delete_by_key", desc = "Delete bookmark by key" },
   { on = [
-    "b",
+    "u",
     "D",
-  ], run = "plugin bookmarks delete_all", desc = "Delete all bookmarks" },
+  ], run = "plugin yamb delete_by_fzf", desc = "Delete bookmark by fzf" },
+  { on = [
+    "u",
+    "A",
+  ], run = "plugin yamb delete_all", desc = "Delete all bookmarks" },
+  { on = [
+    "u",
+    "r",
+  ], run = "plugin yamb rename_by_key", desc = "Rename bookmark by key" },
+  { on = [
+    "u",
+    "R",
+  ], run = "plugin yamb rename_by_fzf", desc = "Rename bookmark by fzf" },
 ]

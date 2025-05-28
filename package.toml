@@ -19,9 +19,9 @@ rev = "ca18a2c"
 hash = "5c20ffa5171dab34042e03d273dddc5b"
 
 [[plugin.deps]]
-use = "dedukun/bookmarks"
-rev = "fbb7c00"
-hash = "1d231a808d3344546380df33daf43e91"
+use = "h-hg/yamb"
+rev = "22af003"
+hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [flavor]
 deps = []
