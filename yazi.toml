@@ -1,5 +1,5 @@
 # default -- https://github.com/sxyazi/yazi/blob/shipped/yazi-config/preset/yazi-default.toml
-[manager]
+[mgr]
 ratio = [1, 4, 3]
 sort_by = "natural"
 sort_sensitive = false
@@ -31,3 +31,13 @@ extract = [
   { run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
   { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
 ]
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"

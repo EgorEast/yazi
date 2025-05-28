@@ -25,8 +25,8 @@ hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "4df8f70"
-hash = "2f1053f89d1a301a648ab181d0948e38"
+rev = "43ff052"
+hash = "d0ad0c1946b46a30c8489735fe8de41c"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
@@ -37,6 +37,11 @@ hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 use = "boydaihungst/restore"
 rev = "1bfd5f7"
 hash = "f61cea367316f9459590f5c1dc4fc"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "43ff052"
+hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [flavor]
 deps = []
