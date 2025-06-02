@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "2496cd9"
-hash = "5b9dea47776a30946cfbf83232d18fb1"
+rev = "10b4627"
+hash = "3ec6a973d506665f1570a9fe08343fd8"
 
 [[plugin.deps]]
 use = "Reledia/glow"
@@ -25,7 +25,7 @@ hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "43ff052"
+rev = "63f9650"
 hash = "d0ad0c1946b46a30c8489735fe8de41c"
 
 [[plugin.deps]]
@@ -35,17 +35,17 @@ hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
 [[plugin.deps]]
 use = "boydaihungst/restore"
-rev = "1bfd5f7"
-hash = "f61cea367316f9459590f5c1dc4fc"
+rev = "86dff43"
+hash = "f99f16081c0efc8ed49df9b788f92671"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "43ff052"
+rev = "63f9650"
 hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "43ff052"
+rev = "63f9650"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[flavor.deps]]
